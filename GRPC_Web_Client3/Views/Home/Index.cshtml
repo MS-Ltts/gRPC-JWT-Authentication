@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Testing";
+}
+<!--Required Js Files-->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<div class="content-wrapper">
+    <section class="content">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="box-header with-border">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="form-group">
+                                <lable formaction="User Name" class="col-sm-4 control-lable lable-name">Name</lable>
+                                <div class="col-sm-8">
+                                    <div id="showUserName">model=>model.UserName</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <lable formaction="User Email" class="col-sm-4 control-lable lable-name">Email</lable>
+                                <div class="col-sm-8">
+                                    <div id="showUserEmail"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="display-4">Welcome</h1>
+                            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+@*<script>
+    $(document).ready(function () {
+        var serverdata = JSON.parse('@Html.Encode(Model)').Data.getAllResult;
+
+            $("#showUserName").html(serverdata.UserName);
+            $("#showUserEmail").html(serverdata.UserEmail);
+    });
+</script>*@
